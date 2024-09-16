@@ -1,0 +1,6 @@
+@SabanaBus_HostAddress = http://localhost:5216
+
+GET {{SabanaBus_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
