@@ -6,7 +6,12 @@ namespace SabanaBus.Modelo
     {
         [Key]
         public int IdPermission { get; set; }
-        public required string Permission { get; set; }
-        public required ICollection<PermissionsXUserTypes> PermissionsXUserType { get; set; }
+        public string Permission { get; set; }
+
+        public List<PermissionsXUserTypes> PermissionsXUserType { get; set; } = new List<PermissionsXUserTypes>();
+
+  
+
+        public bool IsDeleted { get; set; } = false;
     }
 }

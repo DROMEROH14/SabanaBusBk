@@ -10,8 +10,10 @@ namespace SabanaBus.Modelo
         public int FkRouteID { get; set; }
         public DateTime AssignmentDate { get; set; }
 
-        public required Bus Bus { get; set; }
-        public required Route Route { get; set; }
+        public  Bus Bus { get; set; }
+        public  Route Route { get; set; }
+
+        public bool IsDeleted { get; set; } = false;
     }
 
 }

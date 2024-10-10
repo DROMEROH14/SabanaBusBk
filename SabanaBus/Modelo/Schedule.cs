@@ -11,8 +11,10 @@ namespace SabanaBus.Modelo
         public TimeSpan ArrivalTime { get; set; }
         public int Frequency { get; set; }
         public bool Status { get; set; }
+        public Route Route { get; set; }
+        public List<Notification> Notifications { get; set; } = new List<Notification>();
+        
 
-        public required ICollection<Notification> Notifications { get; set; }
-        public required Route Route { get; set; }
+        public bool IsDeleted { get; set; } 
     }
 }
