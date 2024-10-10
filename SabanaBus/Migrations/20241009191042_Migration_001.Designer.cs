@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SabanaBus.Context;
 
@@ -11,9 +12,11 @@ using SabanaBus.Context;
 namespace SabanaBus.Migrations
 {
     [DbContext(typeof(SabanaBusDbContext))]
-    partial class SabanaBusDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241009191042_Migration_001")]
+    partial class Migration_001
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
